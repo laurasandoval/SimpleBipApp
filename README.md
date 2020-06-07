@@ -1,6 +1,6 @@
-> Since the primary use-case for this project only applies to Chile, a chilean-spanish speaking country, this project uses *Spanglish* as it's primary language.
-
 # SimpleBipApp
+
+> Since the primary use-case for this project only applies to Chile, a chilean-spanish speaking country, this project uses *Spanglish* as it's primary language.
 
 ### 🌎 [Demo](https://laurasandoval.github.io/SimpleBipApp/)
 
