@@ -1,8 +1,8 @@
-> ☝️ Since the primary use-case for this project only applies to Chile, a chilean-spanish speaking country, this project uses *Spanglish* as it's primary language.
+> Since the primary use-case for this project only applies to Chile, a chilean-spanish speaking country, this project uses *Spanglish* as it's primary language.
 
 # SimpleBipApp
 
-## [Demo](https://laurasandoval.github.io/SimpleBipApp/)
+### [👉 Demo](https://laurasandoval.github.io/SimpleBipApp/)
 
  Aplicación web hiper-minimalista para obtener el saldo de una tarjeta Bip. Originalmente lanzada en 2018, luego deprecada en 2019, y finalmente re-escrita en 2020 para hacerla open-source.
 
