@@ -20,7 +20,7 @@
  # API
 Este proyecto usa la maravillosa API que armamos con [@riverosroca](https://github.com/riverosroca) (en realidad la escribió él, yo solo le conté que había una fuente más actualizada que el clásico y añejo `pocae` para obtener el saldo de la Bip, y que no había ninguna API pública que apuntara ahí).
 
-Como la API es de [@riverosroca](https://github.com/riverosroca), los permisos para usarla dependen de él. Pero me dijo que no había problema en hacerla pública :)
-
 # Permisos
 Eres libre de copiar, modificar, fusionar, publicar, criticar, apoyar, vivir con, y hasta tomarte un cafecito con el código de este proyecto si así lo deseas.
+
+Como la API es de [@riverosroca](https://github.com/riverosroca), los permisos para usarla dependen de él. Pero me dijo que no había problema en hacerla pública :)
