@@ -150,7 +150,7 @@ body {
   }
 }
 
-.card .actions button:not(:disabled):hover {
+.card .actions button:not(:disabled):active {
   opacity: 0.6;
 }
 
