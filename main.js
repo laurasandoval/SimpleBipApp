@@ -37,8 +37,8 @@ function updateBalance(rawBalance, formattedBalance) {
 
 function someCard() {
   cardNumberInput.value.length > 0
-    ? getBalanceButton.setAttribute("disabled", "false")
-    : getBalanceButton.setAttribute("disabled", "true");
+    ? (getBalanceButton.disabled = false)
+    : (getBalanceButton.disabled = true);
   return cardNumberInput.value.length > 0;
 }
 

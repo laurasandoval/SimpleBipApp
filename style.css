@@ -23,9 +23,10 @@ body {
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   margin: 0;
   padding: 0;
-  background: rgba(var(--color-blue-1-rgb), 1);
+  background-color: rgba(var(--color-blue-1-rgb), 1);
   padding: 8px;
   box-sizing: border-box;
 }
@@ -42,7 +43,7 @@ body {
   grid-auto-rows: fit-content;
   grid-gap: 16px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.1);
   padding: 16px;
   box-sizing: border-box;
@@ -53,7 +54,7 @@ body {
 .card input {
   display: block;
   width: 100%;
-  background: rgba(118, 118, 128, 0.16);
+  background-color: rgba(var(--color-grey-rgb), 0.15);
   margin: 0;
   padding: 8px 12px;
   box-sizing: border-box;
@@ -133,12 +134,30 @@ body {
   color: rgba(255, 255, 255, 1);
   padding: 14px 16px;
   box-sizing: border-box;
-  background: rgba(var(--color-blue-2-rgb), 1);
+  background-color: rgba(var(--color-blue-2-rgb), 1);
   border-radius: 8px;
   -webkit-appearance: none;
   border: none;
   outline: none;
   box-shadow: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+@media (hover: hover) {
+  .card .actions button:not(:disabled):hover {
+    opacity: 0.8;
+  }
+}
+
+.card .actions button:not(:disabled):hover {
+  opacity: 0.6;
+}
+
+.card .actions button:disabled {
+  color: rgba(var(--color-grey-rgb), 0.8);
+  background-color: rgba(var(--color-grey-rgb), 0.15);
+  cursor: not-allowed;
 }
 
 .card .actions button:focus {
