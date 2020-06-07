@@ -1,0 +1,147 @@
+:root {
+    --color-blue-1-rgb: 0, 90, 214;
+    --color-blue-2-rgb: 0, 122, 255;
+    --color-grey-rgb: 118, 118, 121;
+    --focus-ring: 0px 0px 0px 4px rgba(var(--color-blue-2-rgb), 0.6);
+  }
+  
+  .visuallyhidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+  }
+  
+  body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    background: rgba(var(--color-blue-1-rgb), 1);
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  @media (min-width: 400px) {
+    body {
+      padding: 32px 8px;
+    }
+  }
+  
+  .card {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: fit-content;
+    grid-gap: 16px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    box-sizing: border-box;
+    max-width: 400px;
+    border-radius: 16px;
+  }
+  
+  .card input {
+    display: block;
+    width: 100%;
+    background: rgba(118, 118, 128, 0.16);
+    margin: 0;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font: inherit;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 1);
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .card input:focus {
+    box-shadow: var(--focus-ring);
+  }
+  
+  .card input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .card input::-webkit-outer-spin-button,
+  .card input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .card input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  .card .results[data-has-results="false"] {
+    display: none;
+    visibility: hidden;
+  }
+  
+  .card .results {
+    display: grid;
+    grid-gap: 8px;
+    padding: 8px 0;
+    text-align: center;
+  }
+  
+  .card .results .result-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgba(var(--color-grey-rgb), 1);
+    margin: 0;
+  }
+  
+  .card .results .result-value {
+    font-size: 51px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: rgba(0, 0, 0, 1);
+    margin: 0;
+  }
+  
+  .card .disclaimer {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(var(--color-grey-rgb), 1);
+    margin: 0;
+  }
+  
+  .card .actions {
+    display: grid;
+    grid-gap: 8px;
+  }
+  
+  .card .actions button {
+    display: block;
+    font: inherit;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    padding: 14px 16px;
+    box-sizing: border-box;
+    background: rgba(var(--color-blue-2-rgb), 1);
+    border-radius: 8px;
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .card .actions button:focus {
+    box-shadow: var(--focus-ring);
+  }
+  
