@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saldo Bip</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="visuallyhidden">Saldo Bip</h1>
+  <main class="card">
+    <section>
+      <label for="bip-number-input" class="visuallyhidden">Número de tarjeta:</label>
+      <input id="bip-number-input" placeholder="12345678" type="number" min="0" inputmode="numeric" pattern="[0-9]*">
+    </section>
+    <section class="results" data-has-results="true">
+      <h2 class="result-title">Último saldo registrado</h2>
+      <h3 class="result-value" role="text"><span aria-hidden="true">$</span>1.000<span class="visuallyhidden"> pesos chilenos.</span></h3>
+    </section>
+    <section>
+      <p class="disclaimer">Tu saldo podría tener algunas horas de desfase. Esto sucede por limitaciones tecnológicas de la tarjeta Bip.</p>
+    </section>
+    <section class="actions">
+      <button>Consultar Saldo</button>
+    </section>
+  </main>
+  <script src="main.js" async defer></script>
+</body>
+</html>
