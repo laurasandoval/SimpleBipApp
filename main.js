@@ -3,7 +3,11 @@ let getBalanceButton = document.getElementById("get-balance");
 
 async function getBalance() {
   if (someCard) {
+    let loadingIndicator = document.querySelector(".loader");
     let cardNumber = cardNumberInput.value;
+    
+    loadingIndicator.classList.add("loading");
+    
     let response = await fetch(
       `https://api.xor.cl/bip/new.php?n=${cardNumber}`
     );
@@ -15,6 +19,7 @@ async function getBalance() {
       "$1."
     )}`;
 
+    loadingIndicator.classList.remove("loading");
     updateBalance(rawBalance, formattedBalance);
   }
 }

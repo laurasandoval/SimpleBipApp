@@ -163,3 +163,22 @@ body {
 .card .actions button:focus {
   box-shadow: var(--focus-ring);
 }
+
+.card .loader.loading {
+  color: transparent;
+  animation: loadingAnimation 2s ease-in-out infinite;
+  pointer-events: none;
+  user-select: none;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    background-color: rgba(var(--color-grey-rgb), 0.15);
+  }
+  50% {
+    background-color: rgba(var(--color-grey-rgb), 0.3);
+  }
+  100% {
+    background-color: rgba(var(--color-grey-rgb), 0.15);
+  }
+}
